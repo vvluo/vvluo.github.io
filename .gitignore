@@ -1,0 +1,11 @@
+# Never commit camera originals — they carry GPS, timestamps, and device info.
+# Run photos through the strip step first (see README) and commit only the output.
+IMG_*.jpg
+IMG_*.JPG
+IMG_*.jpeg
+IMG_*.heic
+IMG_*.HEIC
+IMG_*.png
+IMG_*.PNG
+
+.DS_Store

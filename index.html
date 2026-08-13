@@ -5,88 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aaron Guo</title>
-  <style>
-    :root {
-      --magenta: #f7d6ef;
-      --light-red: #ffd9d4;
-      --ink: #3a2b38;
-      --panel-ink: #2d5f7a;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100%;
-    }
-
-    body {
-      background: linear-gradient(135deg, var(--magenta) 0%, var(--light-red) 100%);
-      background-attachment: fixed;
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 18px;
-      line-height: 1.65;
-      display: flex;
-      justify-content: center;
-    }
-
-    main {
-      width: 100%;
-      max-width: 44rem;
-      padding: 12vh 1.5rem 4rem;
-    }
-
-    h1 {
-      font-size: clamp(2.75rem, 8vw, 4.5rem);
-      font-weight: 800;
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      margin: 0 0 2rem;
-    }
-
-    p {
-      margin: 0 0 1.5rem;
-    }
-
-    .socials {
-      display: flex;
-      gap: 1.5rem;
-      margin-top: 3.5rem;
-    }
-
-    .socials a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 5rem;
-      height: 5rem;
-      border-radius: 1rem;
-      background: rgba(255, 255, 255, 0.35);
-      color: var(--panel-ink);
-      transition: transform 0.15s ease, background 0.15s ease;
-    }
-
-    .socials a:hover,
-    .socials a:focus-visible {
-      transform: translateY(-3px);
-      background: rgba(255, 255, 255, 0.6);
-    }
-
-    .socials svg {
-      width: 3rem;
-      height: 3rem;
-      fill: currentColor;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <main>
+    <nav class="tabs">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
     <h1>Hi, I'm Aaron Guo!</h1>
 
     <p>
@@ -126,6 +56,8 @@
         </svg>
       </a>
     </nav>
+
+    <footer class="footer">© 2026 | Aaron Guo: Problem Solver</footer>
   </main>
 </body>
 
