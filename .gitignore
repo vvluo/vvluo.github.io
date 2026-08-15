@@ -1,5 +1,7 @@
 # Never commit camera originals — they carry GPS, timestamps, and device info.
-# Run photos through the strip step first (see README) and commit only the output.
+# Strip a photo before adding it, and commit only the output:
+#   magick IN.jpg -auto-orient -resize 2000x2000\> -colorspace sRGB -strip -quality 82 gallery/NAME.jpg
+# (-auto-orient is required: -strip drops the EXIF tag that keeps the photo upright.)
 IMG_*.jpg
 IMG_*.JPG
 IMG_*.jpeg
