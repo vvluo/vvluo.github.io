@@ -11,3 +11,6 @@ IMG_*.png
 IMG_*.PNG
 
 .DS_Store
+
+# Raw source for pfp.jpg — 11MB with EXIF/XMP; keep it out of the repo.
+pfp.png

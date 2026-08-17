@@ -31,7 +31,7 @@ body {
 
 main {
   width: 100%;
-  max-width: 44rem;
+  max-width: 50rem;
   padding: 3rem 1.5rem 4rem;
 }
 
@@ -95,6 +95,43 @@ p {
   height: 2.5px;
   border-radius: 999px;
   background: linear-gradient(90deg, rgba(59, 130, 246, 0) 0%, var(--accent) 50%, rgba(59, 130, 246, 0) 100%);
+}
+
+/* Intro: text left, photo right */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.intro-text p:last-child {
+  margin-bottom: 0;
+}
+
+.pfp {
+  flex-shrink: 0;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 1.25rem;
+  object-fit: cover;
+}
+
+@media (max-width: 40rem) {
+  .intro {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .pfp {
+    order: -1;
+    width: 9rem;
+    height: 9rem;
+  }
 }
 
 /* Social / resume panels */
